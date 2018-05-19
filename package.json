@@ -1,14 +1,12 @@
 {
   "name": "weather_app",
   "version": "1.0.0",
-  "description":
-    "Simple weather application for practising API's and Redux",
+  "description": "Simple weather application for practising API's and Redux",
   "main": "index.js",
   "repository": "",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test":
-      "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
+    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
   },
   "author": "Priyank Kodesia",
@@ -33,6 +31,7 @@
     "react-dom": "16.3.2",
     "react-redux": "5.0.7",
     "react-router": "^2.0.1",
-    "redux": "4.0.0"
+    "redux": "4.0.0",
+    "redux-promise": "^0.6.0"
   }
 }
