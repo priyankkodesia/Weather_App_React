@@ -1,9 +1,7 @@
 import { combineReducers } from 'redux';
-import searchedItemReducer from './reducer_searched_item';
-import searchHistoryReducer from './reducer_search_history';
+import WeatherListReducer from './reducer_weather';
 
 const rootReducer = combineReducers({
-    searchHistory:searchHistoryReducer,
-    searchedItem:searchedItemReducer});
+    weatherList:WeatherListReducer});
 
 export default rootReducer;

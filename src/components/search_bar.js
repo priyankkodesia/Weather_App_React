@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import searchedItem from '../reducers/reducer_searched_item';
+import searchedItem from '../reducers/reducer_weather';
 import locationSearched from '../actions/index';
 
 class SearchBar extends Component{
@@ -15,15 +15,24 @@ handleSubmit(e){
     e.target.search_bar.value = '';
 }
     render(){
-        return (<div>
-            <form className="form-inline" method="POST" onSubmit={this.handleSubmit.bind(this)}>
-            <div className="form-group mx-sm-6 mb-2">
-                <input type="text" className="form-control" ref="search_bar" id="search_bar" placeholder="Search" style={{marginRight:3}}/>
+        return (
+            <div className="container">
+            <br />
+            <div className="row">
+            <div className="col-12">
+                <form  method="POST" className="form-inline" onSubmit={this.handleSubmit.bind(this)}  >
+                <div className="col-10" style={{textAlign:'center'}} >
+                    <input type="text" className="form-control  w-100" ref="search_bar" id="search_bar" placeholder="Search" style={{marginRight:3}}/>
+                    </div>
+                    <div className="col-2" style={{textAlign:'center'}}>
+                    <button type="submit" className="btn btn-primary">Search</button>
+                    </div>
+                </form>
             </div>
-            <button type="submit" ref="search_button" id="search_button" className="btn btn-primary mb-2">Search</button>
-            </form>
-
             </div>
+            <br /><br />
+            </div>
+ 
         )
     }
 }
