@@ -5,3 +5,8 @@ td,th{
 svg{
     height:150px !important
 }
+body{
+    background-image: url(../static/images/wallpaper.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+}

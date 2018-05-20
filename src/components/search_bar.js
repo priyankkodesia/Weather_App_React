@@ -22,7 +22,7 @@ handleSubmit(e){
             <div className="col-12">
                 <form  method="POST" className="form-inline" onSubmit={this.handleSubmit.bind(this)}  >
                 <div className="col-10" style={{textAlign:'center'}} >
-                    <input type="text" className="form-control  w-100" ref="search_bar" id="search_bar" placeholder="Search" style={{marginRight:3}}/>
+                    <input type="text" className="form-control  w-100" ref="search_bar" id="search_bar" placeholder="Get a 5 day forecast of your favourite cities in US" style={{marginRight:3}}/>
                     </div>
                     <div className="col-2" style={{textAlign:'center'}}>
                     <button type="submit" className="btn btn-primary">Search</button>
